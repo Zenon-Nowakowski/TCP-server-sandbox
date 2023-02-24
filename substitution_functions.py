@@ -146,9 +146,9 @@ def inv_sBox(ciphertext):
         
 ############# testing #########
 #call the function to encryp here to test (or in your client and server program
-# phrase = "College"
-# encrypted = encryptCaesar(phrase)
-# final = decryptCaesar(encrypted)
+phrase = "College"
+encrypted = encryptCaesar(phrase)
+final = decryptCaesar(encrypted)
 
 #plaintext = "xray"
 #ciphertext = encryptCaesar(plaintext)
