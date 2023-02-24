@@ -30,7 +30,8 @@ while True:
       print("recieved: " + data.decode())
       reply = '...'
       reply= data.decode()
-      ROT13(reply)
+      #decode sbox encrpytion
+      inv_sBox(reply)
       clientsocket.send(reply.encode())
       break
    else:

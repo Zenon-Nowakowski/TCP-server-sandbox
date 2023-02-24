@@ -16,12 +16,13 @@ port = 10000
 # connection to hostname on the port.
 s.connect((host, port))
 
-# send message. The string needs to be converted to bytes.
+# send message. The string needs to be converted to bytes. old code below
 # blueTeam = ["Ana ", "Emily ", "Micheal ", "John ", "Ben "]
 # for player in blueTeam: 
 #     s.send(player.encode())
-plaintext = "College Station12345"
-msg = ROT13(plaintext)
+#Example of using sBox encryption
+plaintext = "Zoo xray rellis college station csci458"
+msg = sBox(plaintext)
 s.send(msg.encode())
 
 # Receive no more than 1024 bytes
