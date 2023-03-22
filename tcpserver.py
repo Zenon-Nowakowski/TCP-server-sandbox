@@ -5,7 +5,7 @@ from substitution_functions import *
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 
 # my IP 
-host = "192.168.0.15"                         
+host = "IP"                         
 
 #set port number for this server
 port = 10000                                          

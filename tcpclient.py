@@ -6,7 +6,7 @@ from substitution_functions import *
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 
 # update with the IP address of your server
-host = "192.168.0.15"
+host = "IP"
 #print to make sure it has an IP address
 print(host)
 
