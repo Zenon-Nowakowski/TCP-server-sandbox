@@ -4,9 +4,10 @@ import socket
 from substitution_functions import * 
 # create a TCP socket object
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-
-# update with the IP address of your server
-host = "IP"
+#get and updte ip addr
+hostname=socket.gethostname()   
+IPAddr=socket.gethostbyname(hostname)  
+host = IPAddr
 #print to make sure it has an IP address
 print(host)
 

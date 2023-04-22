@@ -3,9 +3,10 @@ import socket
 from substitution_functions import * 
 # create a TCP/IP socket object
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
-
-# my IP 
-host = "IP"                         
+#get and updte ip addr
+hostname=socket.gethostname()   
+IPAddr=socket.gethostbyname(hostname)  
+host = IPAddr                       
 
 #set port number for this server
 port = 10000                                          
